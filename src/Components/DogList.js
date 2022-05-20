@@ -1,4 +1,5 @@
 import DogItem from "./DogItem"
+import Filter from "./Filter"
 
 function DogList({dogs})
 {
@@ -11,7 +12,8 @@ function DogList({dogs})
 
     return(
         <div class="dog-list">
-            <p>doglist go here</p>
+            <h2>Dogs for adoption: </h2>
+            <Filter />
             {dogElement}
         </div>
     )
