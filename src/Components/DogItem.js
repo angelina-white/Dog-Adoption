@@ -1,11 +1,13 @@
 function DogItem({name, breed, image})
 {
     return(
-        <span>
-            <h2>{name}</h2>
-            <h3>{breed}</h3>
+        <div className="card">
             <img src={image}></img>
-        </span>
+            <div className="container">
+                <h2>{name}</h2>
+                <h3>{breed}</h3>
+            </div>
+        </div>
     )
 }
 
