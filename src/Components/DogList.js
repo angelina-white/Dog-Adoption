@@ -32,7 +32,9 @@ function DogList({dogs})
             <ul className= "dog-item">
                 {dogsToDisplay.map((e) =>
                 (
-                    <DogItem key={e.id} name={e.name} breed={e.breed} image={e.image}></DogItem>
+                    <li>
+                        <DogItem key={e.id} name={e.name} breed={e.breed} image={e.image}></DogItem>
+                    </li>
                 ))}
             </ul>
         </div>
