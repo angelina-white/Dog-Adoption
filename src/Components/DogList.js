@@ -4,13 +4,6 @@ import {useState} from "react"
 
 function DogList({dogs})
 {
-    // const dogElement = dogs.map((e) =>
-    // {
-    //     return(
-    //         <DogItem key={e.id} name={e.name} breed={e.breed} image={e.image}></DogItem>
-    //     )
-    // })
-
     const [selectedDogs, setSelectedDogs] = useState("all")
 
     function handleDogChange(event)
@@ -42,7 +35,6 @@ function DogList({dogs})
                     <DogItem key={e.id} name={e.name} breed={e.breed} image={e.image}></DogItem>
                 ))}
             </ul>
-            {/* {dogElement} */}
         </div>
     )
 }
