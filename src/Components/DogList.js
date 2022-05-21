@@ -2,7 +2,7 @@ import DogItem from "./DogItem"
 import Filter from "./Filter"
 import {useState} from "react"
 
-function DogList({dogs})
+function DogList({isDarkMode, onDarkModeClick, pinkCard, dogsForAdopt, dogs})
 {
     const [selectedDogs, setSelectedDogs] = useState("all")
 
@@ -25,7 +25,10 @@ function DogList({dogs})
 
     return(
         <div className="dog-list">
-            <h2>Dogs for adoption: </h2>
+            <h2 className={dogsForAdopt}>Dogs for adoption: </h2>
+            <button onClick={onDarkModeClick}>
+                {isDarkMode ? "Light" : "Dark"} Mode
+            </button>
             <div class="filter">
                 <Filter onDogChange={handleDogChange}/>
             </div>
@@ -33,7 +36,7 @@ function DogList({dogs})
                 {dogsToDisplay.map((e) =>
                 (
                     <li>
-                        <DogItem key={e.id} name={e.name} breed={e.breed} image={e.image}></DogItem>
+                        <DogItem key={e.id} name={e.name} breed={e.breed} image={e.image} pinkCard={pinkCard}></DogItem>
                     </li>
                 ))}
             </ul>

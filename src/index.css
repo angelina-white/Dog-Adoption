@@ -5,7 +5,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./boneImage2.jpg");
+  background-image: url("./boneImage.jpg");
+  color: #7D4A50;
+}
+
+.App.dark {
+  --font-color: #6F6B75;
+  --background: url("./boneImageDark.jpg");
+  --background--light: rgb(80, 80, 80);
+  transition: all 0.3s;
+}
+
+.App {
+  background: var(--background);
+  color: var(--font-color);
 }
 
 code {
@@ -20,26 +33,50 @@ header {
   font-size: 30px;
 }
 
+.header.purple {
+  background-color: #E8DFF5;
+}
+
 .dog-list {
   text-align: center;
 }
 
+.dogsForAdopt {
+  font-size: 30px;;
+}
+
+.dogsForAdopt.dark {
+  color: white;
+}
+
 .dog-item {
   margin-left: 70px;
-
 }
 
 .card:hover {
-  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
 }
 
 .card {
   background: #FCE1E4;
-  box-shadow: 0 4px 8px 0 #DAEAF6;
+  box-shadow: 0 4px 5px 0 #E8DFF5;
   transition: 0.3s;
   width: 85%;
   margin: 25px;
   padding: 15px;
+}
+
+.card.purple {
+  background: #E8DFF5;
+  box-shadow: 0 4px 5px 0 #E8DFF5;
+  transition: 0.3s;
+  width: 85%;
+  margin: 25px;
+  padding: 15px;
+}
+
+ul {
+  height: 2100px;
 }
 
 li {

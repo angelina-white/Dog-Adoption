@@ -1,7 +1,7 @@
-function DogItem({name, breed, image})
+function DogItem({name, breed, image, pinkCard})
 {
     return(
-        <div className="card">
+        <div className={pinkCard}>
             <img src={image}></img>
             <div className="container">
                 <h2>{name}</h2>

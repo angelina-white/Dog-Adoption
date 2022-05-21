@@ -1,7 +1,7 @@
-function Header()
+function Header({isPink})
 {
     return(
-        <header>
+        <header className={isPink}>
             <h1>ACPSA</h1>
         </header>
     )
