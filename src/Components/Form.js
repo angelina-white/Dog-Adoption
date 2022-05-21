@@ -1,13 +1,12 @@
 import {useState} from "react"
 
-function Form()
+function Form({pinkForm})
 {
     const [firstName, setFirstName] = useState("")
     const [lastName, setLastName] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
     const [submittedData, setSubmittedData] = useState([])
-    const [thankYou, setThankYou] = ("")
 
     function handleFirstNameChange(event)
     {
@@ -60,7 +59,7 @@ function Form()
 
 
     return (
-        <div class="formDiv" onSubmit={(handleSubmit)}>
+        <div class={pinkForm} onSubmit={(handleSubmit)}>
             <h2 id="contactHeader">Contact Us</h2>
             <h3>Enter your information and message below:</h3>
             <form class="form">

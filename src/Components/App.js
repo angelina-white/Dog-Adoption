@@ -18,12 +18,13 @@ function App() {
   const toggleButton = isDarkMode ? "toggleDark light" : "toggleDark"
   const pinkHeader = isDarkMode ? "header purple" : "header"
   const pinkCard = isDarkMode ? "card purple" : "card"
+  const pinkForm = isDarkMode ? "formDiv purple" : "formDiv"
 
   return (
     <div className= {appClass}>
       <Header isPink={pinkHeader}/>
-      <DogList isDarkMode={isDarkMode} onDarkModeClick = {handleDarkMode} toggleButton={toggleButton} pinkCard={pinkCard} dogsForAdopt={dogsForAdopt} dogs={dogs}/>
-      <Form />
+      <DogList isDarkMode={isDarkMode} onDarkModeClick = {handleDarkMode} toggleButton={toggleButton} pinkCard={pinkCard} dogsForAdopt={dogsForAdopt} dogs={dogs} />
+      <Form pinkForm={pinkForm}/>
     </div>
   );
 }
