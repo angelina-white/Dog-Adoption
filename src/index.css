@@ -38,9 +38,37 @@ header {
   background-color: #E8DFF5;
 }
 
+.navbar {
+  background-color: #DAEAF6;
+  height: 44px;
+  margin-top: -16px;
+  padding-top: 0px;
+}
+
+.navUl {
+  margin-left: 580px;
+}
+
+.navLi {
+  list-style-type: none;
+  float: left;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+a {
+  display: block;
+  padding: 10px;
+  color:black;
+}
+
+li a:hover {
+  background-color: #C1DFF5;
+}
+
 .dog-list {
   text-align: center;
-  height: 2400px;
+  height: 2275px;
 }
 
 .filterButton {
@@ -90,7 +118,7 @@ header {
   box-shadow: 0 4px 5px 0 #E8DFF5;
   transition: 0.3s;
   width: 85%;
-  margin: 30px 30px -25px 30px;
+  margin: 30px 30px 5px 30px;
   padding: 25px 15px 15px 15px;
   border-radius: 10px;
 }
@@ -120,7 +148,7 @@ img {
   text-align: center;
   width: 81%;
   height: auto;
-  margin-top: -50px;
+  margin-top: 50px;
   margin-left: 130px;
   padding-top:20px;
   padding-bottom:40px;
@@ -135,7 +163,7 @@ img {
   font-size: 30px;
 }
 
-li {
+.formLi {
   list-style-type: none;
   margin-top: 30px;
 }

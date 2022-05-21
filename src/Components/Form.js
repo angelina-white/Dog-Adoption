@@ -44,7 +44,7 @@ function Form({pinkForm})
     const listOfSubmissions = submittedData.map((element) => 
     {
         return (
-            <div class="formThankYou">
+            <div id="contactUs" class="formThankYou">
                 <h3>Thank you for contacting us!</h3>   
                 <h3>We will be sending you an email shortly.</h3>
                 <h3>The information you submitted:</h3>
@@ -59,24 +59,24 @@ function Form({pinkForm})
 
 
     return (
-        <div class={pinkForm} onSubmit={(handleSubmit)}>
+        <div class={pinkForm} id="contactUs" onSubmit={(handleSubmit)}>
             <h2 id="contactHeader">Contact Us</h2>
             <h3>Enter your information and message below:</h3>
             <form class="form">
                 <ul>
-                    <li>
+                    <li class="formLi">
                         <input id="inputFirstName" type="text" placeholder="First Name..." onChange={handleFirstNameChange} value={firstName} />
                     </li>
-                    <li>
+                    <li class="formLi">
                         <input type="text" placeholder="Last Name..." onChange={handleLastNameChange} value={lastName} />
                     </li>
-                    <li>
+                    <li class="formLi">
                         <input type="text" placeholder="Email..." onChange={handleEmailChange} value={email} />
                     </li>
-                    <li>
+                    <li class="formLi">
                         <input id="inputMessage" type="textarea" placeholder="Message..." onChange={handleMessageChange} value={message} />
                     </li>
-                    <li>
+                    <li class="formLi">
                         <button id="formSubmitButton" type="submit">Submit</button>
                     </li>
                 </ul>

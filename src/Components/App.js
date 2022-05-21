@@ -1,4 +1,5 @@
 import Header from "./Header"
+import NavBar from "./NavBar"
 import DogList from "./DogList"
 import dogs from "../Data/dogs"
 import {useState} from "react"
@@ -23,6 +24,7 @@ function App() {
   return (
     <div className= {appClass}>
       <Header isPink={pinkHeader}/>
+      <NavBar />
       <DogList isDarkMode={isDarkMode} onDarkModeClick = {handleDarkMode} toggleButton={toggleButton} pinkCard={pinkCard} dogsForAdopt={dogsForAdopt} dogs={dogs} />
       <Form pinkForm={pinkForm}/>
     </div>
