@@ -21,6 +21,7 @@ body {
   background: var(--background);
   color: var(--font-color);
   padding-bottom: 30px;
+  height: 3430px;
 }
 
 code {
@@ -69,7 +70,6 @@ li a:hover {
 
 .dog-list {
   text-align: center;
-  height: 2275px;
 }
 
 .filterButton {
@@ -90,7 +90,7 @@ li a:hover {
   height: 50px;
   width: 120px;
   border-radius: 10px;
-  margin-bottom: -100px;
+  margin-bottom: 0px;
 }
 
 .toggleDark.light {
@@ -99,7 +99,7 @@ li a:hover {
 }
 
 .dogsForAdopt {
-  font-size: 30px;;
+  font-size: 30px;
 }
 
 .dogsForAdopt.dark {
@@ -149,11 +149,12 @@ img {
   text-align: center;
   width: 84.3%;
   height: auto;
-  margin-top: 30px;
+  margin-top:30px;
   margin-left: 110px;
   padding-top:20px;
   padding-bottom:40px;
   border-radius: 50px;
+  float: left;
 }
 
 .formDiv.purple {
@@ -177,22 +178,32 @@ input {
   font-size: 20px;
 }
 
+#inputMessage {
+  background-color: white;
+  display: block;
+  font-size: 20px;
+  width: 30%;
+  height: 200px;
+  margin-left: 420px;
+}
+
 #formSubmitButton {
   font-size: 20px;
 }
 
 #formSubmitButton {
   margin-top: 10px;
+  margin-left: -5px;
 }
 
 .formThankYou {
-  margin-left: 305px;
+  margin-left: 300px;
   margin-top: 30px;
   background-color: white;
   width: 50%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   border-radius: 50px;
+  margin-bottom: 50px;
 }
 
 .formThankYou.purple {
@@ -200,10 +211,14 @@ input {
   color: black;
 }
 
+.thankYouResponse {
+  padding: 5px;
+}
+
 #topA {
   display: block;
   width: 25px;
-  margin-left: 585px;
+  margin-left: 580px;
   margin-top: 20px;
 }
 

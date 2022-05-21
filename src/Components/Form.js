@@ -1,4 +1,5 @@
 import {useState} from "react"
+import { MultilineInput } from 'react-input-multiline';
 
 function Form({pinkForm, pinkResponse})
 {
@@ -74,7 +75,7 @@ function Form({pinkForm, pinkResponse})
                         <input type="text" placeholder="Email..." onChange={handleEmailChange} value={email} />
                     </li>
                     <li class="formLi">
-                        <input id="inputMessage" type="textarea" placeholder="Message..." onChange={handleMessageChange} value={message} />
+                        <MultilineInput id="inputMessage" type="text" placeholder="Enter message..." onChange={handleMessageChange} value={message} />
                     </li>
                     <li class="formLi">
                         <button id="formSubmitButton" type="submit">Submit</button>
