@@ -75,7 +75,7 @@ li a:hover {
   font-size: 20px;
   float: left;
   margin-left: 620px;
-  margin-right: 390px;
+  margin-right: 380px;
   width: 200px;
   background-color: #DAEAF6;
   border-color: transparent;
@@ -106,7 +106,7 @@ li a:hover {
 }
 
 .dog-item {
-  margin-left: 70px;
+  margin-left: 40px;
 }
 
 .card:hover {
@@ -146,10 +146,10 @@ img {
 .formDiv {
   background-color: #FCE1E4;
   text-align: center;
-  width: 81%;
+  width: 84.3%;
   height: auto;
   margin-top: 50px;
-  margin-left: 130px;
+  margin-left: 110px;
   padding-top:20px;
   padding-bottom:40px;
   border-radius: 50px;
@@ -161,6 +161,10 @@ img {
 
 #contactHeader {
   font-size: 30px;
+}
+
+.formUl {
+  margin-left: -35px;
 }
 
 .formLi {
@@ -176,8 +180,13 @@ input {
   font-size: 20px;
 }
 
+#formSubmitButton {
+  margin-top: 10px;
+}
+
 .formThankYou {
-  margin-left: 300px;
+  margin-left: 305px;
+  margin-top: 30px;
   background-color: white;
   width: 50%;
   padding-top: 20px;
@@ -185,12 +194,19 @@ input {
   border-radius: 50px;
 }
 
-.thankYouResponse {
-  margin-top: 30px;
-  border: 2px black;
+.formThankYou.purple {
+  background-color: #6F6B75;
+  color: black;
 }
 
-#formSubmitButton {
-  margin-top: 10px;
-  margin-bottom: 50px;
+#topA {
+  display: block;
+  width: 25px;
+  margin-left: 585px;
+  margin-top: 20px;
+}
+
+#topA:hover {
+  background-color: white;
+  border-radius: 100px;
 }

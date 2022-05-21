@@ -1,6 +1,6 @@
 import {useState} from "react"
 
-function Form({pinkForm})
+function Form({pinkForm, pinkResponse})
 {
     const [firstName, setFirstName] = useState("")
     const [lastName, setLastName] = useState("")
@@ -44,7 +44,7 @@ function Form({pinkForm})
     const listOfSubmissions = submittedData.map((element) => 
     {
         return (
-            <div id="contactUs" class="formThankYou">
+            <div id="contactUs" class={pinkResponse}>
                 <h3>Thank you for contacting us!</h3>   
                 <h3>We will be sending you an email shortly.</h3>
                 <h3>The information you submitted:</h3>
@@ -63,7 +63,7 @@ function Form({pinkForm})
             <h2 id="contactHeader">Contact Us</h2>
             <h3>Enter your information and message below:</h3>
             <form class="form">
-                <ul>
+                <ul class="formUl">
                     <li class="formLi">
                         <input id="inputFirstName" type="text" placeholder="First Name..." onChange={handleFirstNameChange} value={firstName} />
                     </li>
@@ -82,6 +82,7 @@ function Form({pinkForm})
                 </ul>
             </form>
             {listOfSubmissions}
+            <a href="#home" id="topA">Top</a>
         </div>
     )
 }
