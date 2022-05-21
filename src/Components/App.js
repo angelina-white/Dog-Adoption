@@ -14,7 +14,7 @@ function App() {
     setIsDarkMode((isDarkMode) => !isDarkMode)
   }
 
-  const appClass = isDarkMode ? "App dark" : "App"
+  const appClass = isDarkMode ? "App dark" : "App light"
   const dogsForAdopt = isDarkMode ? "dogsForAdopt dark" : "dogsForAdopt"
   const toggleButton = isDarkMode ? "toggleDark light" : "toggleDark"
   const pinkHeader = isDarkMode ? "header purple" : "header"
