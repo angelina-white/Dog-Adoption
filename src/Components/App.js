@@ -2,6 +2,7 @@ import Header from "./Header"
 import DogList from "./DogList"
 import dogs from "../Data/dogs"
 import {useState} from "react"
+import Form from "./Form"
 
 function App() {
 
@@ -11,7 +12,6 @@ function App() {
   {
     setIsDarkMode((isDarkMode) => !isDarkMode)
   }
-
 
   const appClass = isDarkMode ? "App dark" : "App"
   const dogsForAdopt = isDarkMode ? "dogsForAdopt dark" : "dogsForAdopt"
@@ -23,6 +23,7 @@ function App() {
     <div className= {appClass}>
       <Header isPink={pinkHeader}/>
       <DogList isDarkMode={isDarkMode} onDarkModeClick = {handleDarkMode} toggleButton={toggleButton} pinkCard={pinkCard} dogsForAdopt={dogsForAdopt} dogs={dogs}/>
+      <Form />
     </div>
   );
 }

@@ -39,14 +39,17 @@ header {
 
 .dog-list {
   text-align: center;
+  height: 2400px;
 }
 
 .filterButton {
-  font-size: 21px;
+  font-size: 20px;
   float: left;
-  margin-left: 650px;
-  margin-right: 435px;
-  width: 150px;
+  margin-left: 620px;
+  margin-right: 390px;
+  width: 200px;
+  background-color: #DAEAF6;
+  border-color: transparent;
 }
 
 .filterNav {
@@ -55,11 +58,11 @@ header {
 
 .toggleDark {
   background-color: #E8DFF5;
-  font-size: 15px;
+  font-size: 18px;
   color: #6F6B75;
   float: left;
   height: 40px;
-  width: 100px;
+  width: 110px;
 }
 
 .toggleDark.light {
@@ -103,10 +106,6 @@ header {
   width: 85%;
   margin: 25px;
   padding: 15px;
-}
-
-ul {
-  height: 2100px;
 }
 
 li {
