@@ -4,9 +4,8 @@ function Filter({onDogChange})
         <div className="custom-select">
             <select name="filter" class="filterButton" onChange={onDogChange}>
                 <option value="all">Filter by category</option>
-                <option value="cute">Cute</option>
-                <option value="funny">Funny</option>
-                <option value="hyper">Hyper</option>
+                <option value="puppy">Puppy</option>
+                <option value="adult">Adult</option>
             </select>
         </div>
     )

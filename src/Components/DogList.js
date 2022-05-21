@@ -35,7 +35,7 @@ function DogList({isDarkMode, onDarkModeClick, toggleButton, pinkCard, dogsForAd
             <ul className= "dog-item">
                 {dogsToDisplay.map((e) =>
                 (
-                    <li>
+                    <li class="dogItemLi">
                         <DogItem key={e.id} name={e.name} breed={e.breed} age={e.age} image={e.image} pinkCard={pinkCard}></DogItem>
                     </li>
                 ))}
