@@ -66,9 +66,13 @@ header {
   padding: 15px;
 }
 
+.card.purple:hover {
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+}
+
 .card.purple {
   background: #E8DFF5;
-  box-shadow: 0 4px 5px 0 #E8DFF5;
+  box-shadow: 0 4px 5px 0 #FCE1E4;
   transition: 0.3s;
   width: 85%;
   margin: 25px;
