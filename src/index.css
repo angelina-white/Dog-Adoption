@@ -41,6 +41,31 @@ header {
   text-align: center;
 }
 
+.filterButton {
+  font-size: 21px;
+  float: left;
+  margin-left: 650px;
+  margin-right: 435px;
+}
+
+.filterNav {
+  margin-bottom: 60px;
+}
+
+.toggleDark {
+  background-color: #E8DFF5;
+  font-size: 15px;
+  color: #6F6B75;
+  float: left;
+  height: 40px;
+  width: 100px;
+}
+
+.toggleDark.light {
+  background-color: #FCE1E4;
+  color: #7D4A50;
+}
+
 .dogsForAdopt {
   font-size: 30px;;
 }

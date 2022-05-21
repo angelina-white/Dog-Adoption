@@ -1,4 +1,4 @@
-function DogItem({name, breed, image, pinkCard})
+function DogItem({name, breed, age, image, pinkCard})
 {
     return(
         <div className={pinkCard}>
@@ -6,6 +6,7 @@ function DogItem({name, breed, image, pinkCard})
             <div className="container">
                 <h2>{name}</h2>
                 <h3>{breed}</h3>
+                <p>{age}</p>
             </div>
         </div>
     )
